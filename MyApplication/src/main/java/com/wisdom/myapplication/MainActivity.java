@@ -72,6 +72,7 @@ public class MainActivity extends Activity {
     }
 
     public void addLayout(String toDo){
+        if(toDo.isEmpty()) return;
         LinearLayout linearLayout = new LinearLayout(this);
         linearLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.WRAP_CONTENT));
